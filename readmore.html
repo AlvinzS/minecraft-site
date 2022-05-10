@@ -1,0 +1,50 @@
+<!--read more yes-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="icon" type="image/x-icon" href="img/minecraft-favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read more</title>
+  </head>
+  <body>
+    <nav>
+      <!--klassen "active" signalerar var användaren befinner sig-->
+      <ul>
+        <li><a href="index.html"><img src="img/minecraftlogo.webp" id="logga" alt="logo"></a></li>
+
+        <div class="links-hamburger-menu"> <!--Denna div är viktig för att vi då kan ge de länkar som ska gömmas/visas en flexbox (sedan sätta flex-direction: column; i Media Query)-->
+          <li class="myLinks active"><a href="readmore.html">READ MORE</a></li>
+          <li class="myLinks"><a href="clips.html">CLIPS</a></li>
+        </div>
+
+        <!--Hamburger-menyn som inte visas från början:-->
+        <li class="hamburger-meny">
+          <menu>
+            <a href="javascript:void(0);" class="icon" onclick="showLinks()">
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+            </a>
+          </menu>
+        </li>
+
+      </ul>
+
+    </nav>
+    <div class="container-readmore">
+      <h1 class="titles-readmore" id="toppen">Mods</h1>
+      <p class="text1och3 texter">This game also provides the users with the ability to install and play with mods. You can even customize your own mods if you happen to be a programmer. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h2 class="titles-readmore" id="curse-forge-title">Curse forge</h2>
+      <p class="text2och4 texter">You can visit the website <a href="https://www.curseforge.com/" target="_blank">Curse forge</a> to discover different types of mods which can make the game experience more interesting, espacially in the older ages. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h3 class="titles-readmore">The Minecraft Website</h3>
+      <p class="text5 texter">More info on <a href="https://www.minecraft.net/sv-se" target="_blank">THE MINECRAFT WEBSITE.</a> You will find extra information about the game, costs and will have the ability to download. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="#toppen" class="tilltoppen">Till toppen</a>
+    </div>
+
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

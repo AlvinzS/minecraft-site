@@ -1,0 +1,52 @@
+<!--clips-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="icon" type="image/x-icon" href="img/minecraft-favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clips</title>
+  </head>
+  <body>
+    <nav>
+      <!--klassen "active" signalerar var användaren befinner sig-->
+      <ul>
+        <li><a href="index.html"><img src="img/minecraftlogo.webp" id="logga" alt="logo"></a></li>
+
+        <div class="links-hamburger-menu"> <!--Denna div är viktig för att vi då kan ge de länkar som ska gömmas/visas en flexbox (sedan sätta flex-direction: column; i Media Query)-->
+          <li class="myLinks"><a href="readmore.html">READ MORE</a></li>
+          <li class="myLinks active"><a href="clips.html">CLIPS</a></li>
+        </div>
+
+        <!--Hamburger-menyn som inte visas från början:-->
+        <li class="hamburger-meny">
+          <menu>
+            <a href="javascript:void(0);" class="icon" onclick="showLinks()">
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+            </a>
+          </menu>
+        </li>
+
+      </ul>
+
+    </nav>
+    <div class="container-clips">
+      <video preload="none" class="clip1" controls>
+        <source src="img/clip1-OKsaves.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <p class="clips-text1 video-texts">Watch this pro gameplay!</p>
+      <video preload="none" class="clip2 video-texts" controls>
+        <source src="img/clip2-OKgame.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <p class="clips-text2 video-texts">What playing a game of minecraft might look like:</p>
+    </div>
+    <script src="js/index.js"></script>
+
+  </body>
+</html>

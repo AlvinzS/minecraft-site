@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Minecraft info</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="icon" type="image/x-icon" href="img/minecraft-favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <nav>
+      <!--klassen "active" signalerar var användaren befinner sig-->
+      <ul>
+        <li><a href="index.html"><img src="img/minecraftlogo.webp" id="logga" class="active" alt="logo"></a></li>
+
+        <div class="links-hamburger-menu"> <!--Denna div är viktig för att vi då kan ge de länkar som ska gömmas/visas en flexbox (sedan sätta flex-direction: column; i Media Query)-->
+          <li class="myLinks"><a href="readmore.html">READ MORE</a></li>
+          <li class="myLinks"><a href="clips.html">CLIPS</a></li>
+        </div>
+
+        <!--Hamburger-menyn som inte visas från början:-->
+        <li class="hamburger-meny">
+          <menu>
+            <a href="javascript:void(0);" class="icon" onclick="showLinks()">
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+              <div class="hamburger-line"></div>
+            </a>
+          </menu>
+        </li>
+
+      </ul>
+
+    </nav>
+    <div class="container-index">
+      <h1>Overall info</h1>
+      <p class="text1och3 texter">This is a game that most users like. It is made for all kinds of creative people. Boys, girls and everything in-between. Minecraft is a video game in which players create and break apart various kinds of blocks in three-dimensional worlds. The game's two main modes are Survival and Creative. In Survival, players must find their own building supplies and food. They also interact with blocklike mobs, or moving creatures. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h2>Multiplayer</h2>
+      <p class="text2och4 texter">Minecraft has the option to play multiplayer. Here you can play together with other players and participate in a community. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+
+</html>
