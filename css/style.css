@@ -142,6 +142,10 @@ video {
   height: 240px;
   width: 320px;
 }
+.extra-bild {
+  height: 100%;
+  width: 100%;
+}
 /*En media query specifikt för att få länkarna att stacka på varandra när skärmen förminskats.
 Den förminskar även texten på länkarna så att de inte är för stora*/
 @media only screen and (max-width: 600px) {
