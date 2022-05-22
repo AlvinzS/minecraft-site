@@ -15,7 +15,7 @@ a:hover {
   text-decoration: underline;
 }
 a {
-  color: rgb(57, 236, 47);
+  color: rgb(0, 255, 247);
   text-decoration: none;
 }
 p > a {
@@ -125,6 +125,14 @@ h3 {
 .titles-readmore {
   color: rgb(246, 25, 18);
 }
+.title-backgrounds {
+  background-color: rgba(134, 218, 241, 0.5);
+  border-radius: 10px;
+  padding-right: calc(100% - 100% + 5px);
+  padding-left: calc(100% - 100% + 5px); /*Fin padding och margin som förhindrar att bakgrundsfärgen sitter över hela grid-rutan*/
+  margin: 70px;
+
+}
 /*Här ger vi div:en en flexbox för att kunna få länkarna att stacka på varandra:
 [se kommentaren i index.html intill "links-hamburger-menu"] */
 .links-hamburger-menu {
@@ -154,8 +162,5 @@ Den förminskar även texten på länkarna så att de inte är för stora*/
   }
   nav > ul{
     font-size: 20px;
-  }
-  .titles-readmore {
-    color: rgb(230, 16, 208);
   }
 }
